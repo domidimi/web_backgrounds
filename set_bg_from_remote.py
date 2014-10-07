@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+# encoding: utf-8
 '''
 Download the photo of the day from the National Geographic site and set is as
 background image.
