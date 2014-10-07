@@ -59,8 +59,8 @@ def clean_up_old_images():
             image_atime = datetime.utcfromtimestamp(os.path.getatime(img_path))
             now = datetime.utcnow()
             if (now - image_atime).days > MAX_KEEP_DAYS:
-                os.remove(img_path)
                 print("Removing %s" % img_path)
+                os.remove(img_path)
 
 
 def set_background(image_path):
